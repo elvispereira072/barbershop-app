@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia premium</title>
+    <title>Barbearia Premium</title>
     <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,7 +18,7 @@
             overflow-x: hidden;
             overflow-y: auto;
             color: #fff;
-           background-color: orangered;
+            background-color: orangered;
         }
 
         #video-background {
@@ -88,17 +90,35 @@
             margin: 0;
         }
 
+        .contact-container {
+            background-color: black;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .contact-container h2 {
+            margin: 0 0 10px 0;
+            color: #FFD700;
+        }
+
+        .contact-container p {
+            font-size: 1.2em;
+        }
+
+        .contact-container i {
+            margin-right: 10px;
+            color: #FFD700;
+        }
+
         footer {
             background-color: black;
         }
 
         header {
             background-color: black;
-
-        body {
-                background-color: black;
-            }
-           
+        }
     </style>
 </head>
 
@@ -106,7 +126,7 @@
     <header>
         <h1>Bem-vindo à Barbearia Premium</h1>
     </header>
-<br>
+    <br>
     <section>
         <ul>
             <li>
@@ -144,9 +164,12 @@
                 </div>
             </li>
         </ul>
-        <br>
     </section>
-    <br>
+
+    <div class="contact-container">
+        <h2>Contato</h2>
+        <p><i class="fas fa-phone"></i>(XX) 9XXXX-XXXX</p>
+    </div>
 
     <footer>
         <div class="footer-bottom">
@@ -156,4 +179,4 @@
 
 </body>
 
-</html>  
+</html>
