@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia premium</title>
+    <title>Barberia premium</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">"
+    <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
     <style>
-        /* Inclua aqui o CSS atualizado */
         body,
         html {
             margin: 0;
@@ -19,33 +18,33 @@
             overflow-x: hidden;
             height: 100%;
         }
-
-     #home h2 {
+         
+        #home h2 {
     font-family: 'Khand', sans-serif;
 }
 
         #home {
-            text-align: center;
-        }
+    text-align: center; /* Centraliza o texto dentro da section */
+}
 
-        p {
-            margin: 0;
-        }
+p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
 
         .background-video {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 40%;
-            height: 40%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            opacity: 0.7;
-        }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%; /* Diminui a largura para 40% */
+    height: 40%; /* Diminui a altura para 40% */
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.7;
+}
 
         nav {
-            background: black;
+            background:black;
             padding: 20px;
             text-align: center;
             position: relative;
@@ -116,7 +115,7 @@
         }
 
         .comment-section {
-            background-color:  rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
             width: 100%;
@@ -141,7 +140,7 @@
             border: none;
             font-size: 1rem;
         }
-
+        
         .footer-bottom {
             background-color: rgba(5, 5, 5, 0.7);
             color: white;
@@ -150,155 +149,105 @@
         }
 
         .comment-section {
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid yellow;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+    width: 50%; /* Largura da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .comment-section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+.comment-section h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
+}
 
-        .comment-section form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-        .comment-section input[type="text"],
-        .comment-section textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid;
-            border-radius: 5px;
-        }
+.comment-section input[type="text"],
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;;
+    border-radius: 5px;
+}
 
-        .comment-section button {
-            align-self: center;
-            padding: 10px 20px;
-            background-color: navy;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.comment-section button {
+    align-self: center; /* Centraliza o botão */
+    padding: 10px 20px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        .comment-section button:hover {
-            background-color: navy;
-        }
+.comment-section button:hover {
+    background-color: navy;
+}
 
-        .comments {
-            margin-top: 20px;
-        }
+.comments {
+    margin-top: 20px;
+}
 
-        .comment {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
 
-        .comment p {
-            margin: 0;
-            color: black;
-        }
+.comment p {
+    margin: 0;
+    color: black;
+}
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 95%;
-            background-color: #000;
-        }
+/* Container responsivo para vídeos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (proporção padrão de vídeos) */
+    height: 0;
+    overflow: hidden;
+    max-width: 95%;
+    background-color: #000; /* Cor de fundo enquanto o vídeo carrega */
+}
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
-        footer {
-            background-color: black;
-        }
+footer {
+    background-color: black;
+}
 
-        @media (max-width: 768px) {
-            .video-container {
-                max-width: 100%;
-            }
-        }
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+    }
+}
 
-        @media (max-width: 480px) {
-            .video-container {
-                max-width: 100%;
-                padding-bottom: 75%;
-            }
-        }
-
-        .contact-container h2 {
-            margin: 0 0 10px 0;
-            color: #FFD700;
-        }
-
-        .contact-container p {
-            font-size: 1.2em;
-        }
-
-        .contact-container i {
-            margin-right: 10px;
-            color: #FFD700;
-        }
-
-        .service-price {
-            font-size: 1.2em;
-            color: #FFD700;
-        }
-
-        .price-container {
-            background-color: black;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .price-container p {
-            color: yellow;
-            font-size: 1.5em;
-            margin: 0;
-        }
-
-        .contact-container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            margin: 20px;
-        }
-
-        .styled-section {
-            margin: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .footer-bottom {
-            background-color: rgba(5, 5, 5, 0.7);
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 75%; /* Ajuste a proporção para telas muito pequenas, se necessário */
+    }
+}
     </style>
 </head>
 
 <body>
+    
+</body>
+
     <nav class="content">
         <div class="menu-icon" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
@@ -307,115 +256,68 @@
             <a href="sobre.html"><i class="fas fa-home"></i> Sobre Nós</a>
         </div>
     </nav>
-    <br>
-    <div class="content">
-        <section id="home">
-            <h2>Barbearia</h2>
-        </section>
+<br>
 
-        <section id="products" class="product-section">
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeeSMIoyGFM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <br>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8pWtdanVz3I"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <br>
-        </section>
-        <section id="products" class="product-section">
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xRRUc7c7IYM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <br>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CnXRmgi0Ev8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </section>
-        <br>
+<div class="content">
+    <!-- Seção de introdução -->
+    <section id="home">
+        <h2>Barberaria</h2>
+    </section> 
 
-        <section class="styled-section">
-            <ul>
-                <li>
-                    <h3>Corte de Cabelo</h3>
-                    <p>Nosso corte de cabelo é realizado com técnicas avançadas, garantindo um visual moderno e alinhado com as tendências atuais.</p>
-                    <div class="price-container">
-                        <p>Preço: R$ 30,00</p>
-                    </div>
-                </li>
-                <br>
-                <li>
-                    <h3>Cabelo + Barba</h3>
-                    <p>Serviço de barba completo, com modelagem, aparo e hidratação, utilizando produtos premium para um acabamento perfeito.</p>
-                    <div class="price-container">
-                        <p>Preço: R$ 50,00</p>
-                    </div>
-                </li>
-                <br>
-                <li>
-                    <h3>Coloração</h3>
-                    <p>Serviço de coloração de cabelo, com uma ampla gama de cores e produtos de alta qualidade para garantir um resultado duradouro e vibrante.</p>
-                    <div class="price-container">
-                        <p>Preço: R$ 70,00</p>
-                    </div>
-                </li>
-                <br>
-                <li>
-                    <h3>Tratamento Capilar</h3>
-                    <p>Nossos tratamentos capilares são projetados para revitalizar e nutrir seu cabelo, proporcionando brilho e saúde duradouros.</p>
-                    <div class="price-container">
-                        <p>Preço: R$ 40,00</p>
-                    </div>
-                </li>
-                <br>
-                <li>
-                    <h3>Massagem Relaxante</h3>
-                    <p>Experimente uma massagem relaxante que alivia o estresse e a tensão, promovendo uma sensação de bem-estar e tranquilidade.</p>
-                    <div class="price-container">
-                        <p>Preço: R$ 60,00</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        </section>
-        <br>
-        <div class="contact-container">
-            <h2>Contato</h2>
-            
-            <p><i class="fas fa-phone"></i> Telefone: (xx) 9xxxx-xxxx</p>
-            
-            <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua xxxx, N: xxx - Cidade</p>
-            
-            <p><i class="fas fa-envelope"></i> Email: xxxx@barbeariapremium!gmail.com</p>
-            <br>
-        </div>
+    <!-- Seção de vídeos -->
+<section id="products" class="product-section">
+    <!-- Primeiro Vídeo do YouTube -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JeeSMIoyGFM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
-    <br>
+    <br><br>
+    <!-- Segundo Vídeo do YouTube -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8pWtdanVz3I"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</section>
 
-    <script>
-        function toggleMenu() {
-            var menuItems = document.getElementById("menuItems");
-            menuItems.classList.toggle("active");
-        }
-    </script>
+
+    <!-- Seção de vídeos -->
+<section id="products" class="product-section">
+    <!-- Terceiro Vídeo do YouTube -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xRRUc7c7IYM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <br><br>
+
+    <!-- Quarto Vídeo do YouTube -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CnXRmgi0Ev8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    </section>
+    <br>
 
     <footer>
         <div class="footer-bottom">
             © 2024 Barbearia premium. Todos os direitos reservados
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuItems = document.getElementById('menuItems');
+            menuItems.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
+
