@@ -115,6 +115,28 @@ a {
             color: white;
         }
 
+        /* Estilo para a seção de avaliação de estrelas */
+        #star-rating-section {
+            background-color: black; /* Cor de fundo preta */
+            color: white; /* Texto branco para contrastar */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        /* Estilo específico para os ícones de estrelas dentro da seção de avaliação de estrelas */
+        #star-rating-section .star-rating .fas {
+            color: yellow; /* Cor amarela para as estrelas */
+            font-size: 24px; /* Tamanho da fonte das estrelas */
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        /* Adiciona um efeito de hover nas estrelas */
+        #star-rating-section .star-rating .fas:hover,
+        #star-rating-section .star-rating .fas:hover ~ .fas {
+            color: orange; /* Cor laranja ao passar o mouse */
+        }
+        
         h2,
         h3 {
             color: #FFD700;
